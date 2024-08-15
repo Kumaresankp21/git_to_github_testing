@@ -1,0 +1,20 @@
+Profile
+
+web: gunicorn project_name.wsgi --log-file - 
+#or works good with external database
+web: python manage.py migrate && gunicorn project_name.wsgi
+
+
+runtime.txt
+python --version
+
+requirements.txt
+django
+gunicorn
+whitenoise
+
+
+settings.py
+
+
+CSRF_TRUSTED_ORIGINS= [""]
