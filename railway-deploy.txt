@@ -1,4 +1,4 @@
-Profile
+Procfile
 
 web: gunicorn project_name.wsgi --log-file - 
 #or works good with external database
