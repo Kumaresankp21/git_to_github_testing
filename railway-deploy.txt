@@ -15,6 +15,7 @@ whitenoise
 
 
 settings.py
-
+ 'whitenoise.middleware.WhiteNoiseMiddleware',
+STATICSTORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 CSRF_TRUSTED_ORIGINS= [""]
